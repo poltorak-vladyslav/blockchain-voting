@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Голосування на Blockchain</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/web3/4.2.1/web3.min.js"></script>
+    <script defer src="app.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+            padding: 20px;
+        }
+        h1 {
+            color: #222;
+        }
+        .container {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            margin: auto;
+        }
+        select, button {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            font-size: 16px;
+        }
+        button {
+            background-color: #007bff;
+            color: white;
+            cursor: pointer;
+            border: none;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        #results {
+            margin-top: 20px;
+            text-align: left;
+        }
+        .result-item {
+            background: #e9ecef;
+            padding: 10px;
+            border-radius: 5px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+
+<h1>Голосування на Blockchain</h1>
+<div class="container">
+    <label for="candidate">Виберіть кандидата:</label>
+    <select id="candidate"></select>
+    <button onclick="vote()">Проголосувати</button>
+
+    <div id="results">
+        <h3>Результати голосування:</h3>
+        <div id="results-list"></div>
+    </div>
+</div>
+
+</body>
+</html>
